@@ -1,0 +1,186 @@
+body{
+    /*********************Variable*********************/
+    --taille1: 100vw;
+    --marginTextHaut: 50vh;
+    --marginTextCote: 250px;
+    /*********************Variable*********************/
+    width: calc(var(--taille1) - 10px);
+    height: 6000px;
+    background-color: #0e1525;
+    margin: 0;
+    padding: 0;
+}
+
+body::-webkit-scrollbar {
+    --largeurB: calc(var(--taille1) - 10px);
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #2C1438;  
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 15px;
+    background-color: #F1B9D7;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #b50713;
+}
+
+header{
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 99vw;
+    background-color: transparent;
+    height: 10vh;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+.headerLiens{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.headerLien{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    transition: 0.5s;
+    padding: 3px 10px;
+    border-bottom: 1px solid transparent;
+    color: #FFF;
+    margin:  0px 20px 0px 20px ;
+    text-decoration: none;
+}
+
+.headerLogin{
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerLien:hover{
+    background-color: #db7b0e;
+    border-radius: 50%;
+    color: #ca1313;
+}
+
+.Text1{
+    display: flex;
+    margin-top : var(--marginTextHaut);
+    justify-content: flex-start;
+    margin-left: var(--marginTextCote);
+}
+
+.TextSous1{
+    display: flex;
+    background: linear-gradient(150deg, #f7bc66 0%, #fac369 100%);
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden; /* caché le contenu qui dépasse la hauteur */
+    transition: height 1s, opacity 0.5s; /* ajouter une transition douce pour l'effet de glissement */
+    width: 220px;
+    height: 50vw;
+    border-radius: 40px;
+    padding: 20px;
+}
+
+.TextSous1.expand1 {
+    height: 250px; /* hauteur augmentée lors du clic sur le bouton */ 
+}
+
+.TextSous1 p {
+    display: none; /* caché le contenu par défaut */
+    opacity: 0; /* rendre le contenu invisible par défaut */
+    transition: opacity 0.5s 0.5s; /* ajouter une transition pour faire disparaître le contenu de manière plus douce */
+}
+
+.TextSous1.expand1 p {
+    display: block; /* afficher le contenu lorsqu'il est visible */
+    opacity: 1; /* afficher le contenu de manière progressive */
+    transition: opacity 0.5s; /* ajouter une transition pour faire apparaître le contenu de manière plus douce */
+}
+
+.Text2{
+    display: flex;
+    margin-top : var(--marginTextHaut);
+    justify-content: flex-end;
+    margin-right: var(--marginTextCote);
+}
+
+.TextSous2{
+    display: flex;
+    background-color: #3eca13;
+    flex-direction: column;
+    align-items: center;
+    height: 100px; /* hauteur par défaut */
+    overflow: hidden; /* caché le contenu qui dépasse la hauteur */
+    transition: height 1s, opacity 0.5s; /* ajouter une transition douce pour l'effet de glissement */
+}
+
+.TextSous2.expand2 {
+    height: 250px; /* hauteur augmentée lors du clic sur le bouton */ 
+}
+
+.TextSous2 p {
+    display: none; /* caché le contenu par défaut */
+    opacity: 0; /* rendre le contenu invisible par défaut */
+    transition: opacity 0.5s 0.5s; /* ajouter une transition pour faire disparaître le contenu de manière plus douce */
+}
+
+.TextSous2.expand2 p {
+    display: block; /* afficher le contenu lorsqu'il est visible */
+    opacity: 1; /* afficher le contenu de manière progressive */
+    transition: opacity 0.5s; /* ajouter une transition pour faire apparaître le contenu de manière plus douce */
+}
+
+.Text3{
+    display: flex;
+    margin-top : var(--marginTextHaut);
+    justify-content: flex-start;
+    margin-left: var(--marginTextCote);
+}
+
+.TextSous3{
+    display: flex;
+    background-color: #ca1390;
+    flex-direction: column;
+    align-items: center;
+    height: 100px; /* hauteur par défaut */
+    overflow: hidden; /* caché le contenu qui dépasse la hauteur */
+    transition: height 1s, opacity 0.5s; /* ajouter une transition douce pour l'effet de glissement */
+}
+
+.TextSous3.expand3 {
+    height: 250px; /* hauteur augmentée lors du clic sur le bouton */ 
+}
+
+.TextSous3 p {
+    display: none; /* caché le contenu par défaut */
+    opacity: 0; /* rendre le contenu invisible par défaut */
+    transition: opacity 0.5s 0.5s; /* ajouter une transition pour faire disparaître le contenu de manière plus douce */
+}
+
+.TextSous3.expand3 p {
+    display: block; /* afficher le contenu lorsqu'il est visible */
+    opacity: 1; /* afficher le contenu de manière progressive */
+    transition: opacity 0.5s; /* ajouter une transition pour faire apparaître le contenu de manière plus douce */
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+   transition: 1s transform ease-out;
+}
+
