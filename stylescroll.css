@@ -28,6 +28,7 @@ body {
 .section4 {
   height: 100vh;
   color: black;
+  background-color: #d7c4b2;
 }
 
 section h1 {
@@ -35,6 +36,7 @@ section h1 {
   text-align: center;
   font-size: 80px;
   margin-bottom: 80;
+  background-color: #d7c4b2;
 }
 
 body{
@@ -99,7 +101,7 @@ body::-webkit-scrollbar-thumb:hover {
   display: flex;
   flex-direction: column;
   text-align: center;
-  background-color: #b50792;
+  background-color: #ae7663;
   border-radius:8% 6% 43% 12% / 14% 13% 55% 35% ;
   width: 90vh;
   transition: height 1s, opacity 0.5s;
@@ -130,7 +132,7 @@ body::-webkit-scrollbar-thumb:hover {
   display: flex;
   flex-direction: column;
   text-align: center;
-  background-color: #38b507;
+  background-color: #b97057;
   border-radius: 8% 6% 11% 27% / 14% 13% 30% 46% ;
   width: 90vh;
   transition: height 1s, opacity 0.5s;
@@ -161,7 +163,7 @@ body::-webkit-scrollbar-thumb:hover {
   display: flex;
   flex-direction: column;
   text-align: center;
-  background-color: #07a1b5;
+  background-color: #a2553b;
   border-radius: 8% 15% 24% 10% / 14% 13% 30% 46% ;
   width: 90vh;
   transition: height 1s, opacity 0.5s;
@@ -209,4 +211,5 @@ body::-webkit-scrollbar-thumb:hover {
   align-items: center;
   justify-content: center;
   gap: 100px;
+  background-color: #d7c4b2;
 }
