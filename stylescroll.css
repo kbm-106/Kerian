@@ -1,0 +1,175 @@
+body {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.navbar-scrolled {
+  background-color: black;
+}
+
+.intro {
+  height: 100vh;
+}
+
+.intro video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.intro h1 {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+  color: rgb(198, 188, 188);
+}
+
+section {
+  height: 100vh;
+  color: black;
+}
+
+section h1 {
+  padding-top: 300px;
+  text-align: center;
+  font-size: 80px;
+}
+
+body{
+  /*********************Variable*********************/
+  --taille1: 100vw;
+  --marginTextHaut: 50vh;
+  --marginTextCote: 250px;
+  /*********************Variable*********************/
+  width: calc(var(--taille1) - 10px);
+  height: 6000px;
+  background-color: #0e1525;
+  margin: 0;
+  padding: 0;
+}
+
+body::-webkit-scrollbar {
+  --largeurB: calc(var(--taille1) - 10px);
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #212529;  
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 15px;
+  background-color: #2417a9;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #b50713;
+}
+
+.headerLiens{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.headerLien{
+  font-size: 24px;
+  transition: 0.5s;
+  padding: 3px 10px;
+  border-bottom: 1px solid transparent;
+  color: #FFF;
+  font-weight: bold;
+  margin:  0px 20px 0px 20px ;
+  text-decoration: none;
+}
+
+.headerLogin{
+  display: flex;
+  justify-content: space-between;
+}
+
+.headerLien:hover{
+
+  color: #135cca;
+}
+
+.TextSous2{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: flex-start;
+  background-color: #b50713;
+  transition: height 1s, opacity 0.5s;
+  height: 100px; /* hauteur par défaut */
+  overflow: hidden; /* caché le contenu qui dépasse la hauteur */
+}
+
+.TextSous2.expand2 {
+  height: 250px; /* hauteur augmentée lors du clic sur le bouton */ 
+}
+
+.TextSous2 p {
+  display: none; /* caché le contenu par défaut */
+  opacity: 0; /* rendre le contenu invisible par défaut */
+  transition: opacity 0.5s 0.5s; /* ajouter une transition pour faire disparaître le contenu de manière plus douce */
+}
+
+.TextSous2.expand2 p {
+  display: block; /* afficher le contenu lorsqu'il est visible */
+  opacity: 1; /* afficher le contenu de manière progressive */
+  transition: opacity 0.5s; /* ajouter une transition pour faire apparaître le contenu de manière plus douce */
+}
+
+.TextSous1{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: flex-start;
+  background-color: #38b507;
+  transition: height 1s, opacity 0.5s;
+  height: 100px; /* hauteur par défaut */
+  overflow: hidden; /* caché le contenu qui dépasse la hauteur */
+}
+
+.TextSous1.expand1 {
+  height: 250px; /* hauteur augmentée lors du clic sur le bouton */ 
+}
+
+.TextSous1 p {
+  display: none; /* caché le contenu par défaut */
+  opacity: 0; /* rendre le contenu invisible par défaut */
+  transition: opacity 0.5s 0.5s; /* ajouter une transition pour faire disparaître le contenu de manière plus douce */
+}
+
+.TextSous1.expand1 p {
+  display: block; /* afficher le contenu lorsqu'il est visible */
+  opacity: 1; /* afficher le contenu de manière progressive */
+  transition: opacity 0.5s; /* ajouter une transition pour faire apparaître le contenu de manière plus douce */
+}
+.TextSous3{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: flex-start;
+  background-color: #07afb5;
+  transition: height 1s, opacity 0.5s;
+  height: 100px; /* hauteur par défaut */
+  overflow: hidden; /* caché le contenu qui dépasse la hauteur */
+}
+
+.TextSous3.expand3 {
+  height: 250px; /* hauteur augmentée lors du clic sur le bouton */ 
+}
+
+.TextSous3 p {
+  display: none; /* caché le contenu par défaut */
+  opacity: 0; /* rendre le contenu invisible par défaut */
+  transition: opacity 0.5s 0.5s; /* ajouter une transition pour faire disparaître le contenu de manière plus douce */
+}
+
+.TextSous3.expand3 p {
+  display: block; /* afficher le contenu lorsqu'il est visible */
+  opacity: 1; /* afficher le contenu de manière progressive */
+  transition: opacity 0.5s; /* ajouter une transition pour faire apparaître le contenu de manière plus douce */
+}
