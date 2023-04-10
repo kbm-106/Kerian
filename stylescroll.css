@@ -183,6 +183,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 .TextSous3.expand3 {
   height: 350px; /* hauteur augmentée lors du clic sur le bouton */ 
+  border-radius: 8% 15% 4% 10% / 14% 13% 10% 16% ;
 }
 
 .TextSous3 p {
