@@ -109,11 +109,14 @@ body::-webkit-scrollbar-thumb:hover {
   overflow: hidden; /* caché le contenu qui dépasse la hauteur */
   margin-top: 50px;
   align-items: center;
+  justify-content: space-around;
 
 }
 
 .TextSous2.expand2 {
   height: 350px; /* hauteur augmentée lors du clic sur le bouton */ 
+  border-radius:8% 6% 23% 12% / 14% 13% 21% 35% ;
+
 }
 
 .TextSous2 p {
@@ -141,11 +144,13 @@ body::-webkit-scrollbar-thumb:hover {
   margin-top: 50px;
   box-shadow: 0 5px 20px rgba(169, 95, 9, 0.2);
   align-items: center;
+  justify-content: space-around;
 
 }
 
 .TextSous1.expand1 {
-  height: 350px; /* hauteur augmentée lors du clic sur le bouton */ 
+  height: 350px; /* hauteur augmentée lors du clic sur le bouton */   
+  border-radius: 8% 6% 11% 17% / 14% 13% 30% 16% ;
 }
 
 .TextSous1 p {
@@ -173,6 +178,7 @@ body::-webkit-scrollbar-thumb:hover {
   margin-bottom: 50px;
   box-shadow: 0 5px 20px rgba(169, 95, 9, 0.2);
   align-items: center;
+  justify-content: space-around;
 }
 
 .TextSous3.expand3 {
