@@ -1,3 +1,8 @@
+let docTitle = document.title; window.addEventListener("blur", () => { document.title = "Come back :(";
+});
+window.addEventListener("focus", () => { document.title = docTitle;
+});
+
 const intro = document.querySelector(".intro");
 const video = intro.querySelector("video");
 const text = intro.querySelector("h1");
