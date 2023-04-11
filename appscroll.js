@@ -81,3 +81,6 @@ function toggleText3() {
       div.classList.remove("expand3"); /* supprimer la classe pour revenir à la hauteur par défaut */
   }
 }
+
+//
+
