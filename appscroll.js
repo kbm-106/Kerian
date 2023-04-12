@@ -115,4 +115,3 @@ signupBtn.addEventListener('click', (e) => {
 		}
 	});
 });
-
